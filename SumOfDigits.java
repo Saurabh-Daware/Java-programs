@@ -1,5 +1,4 @@
 package whileLoops;
-
 import java.util.Scanner;
 
 public class SumOfDigits {

@@ -8,12 +8,21 @@ public class LegalAgeVerifier {
 		Scanner sc = new Scanner(System.in);
 		int age = sc.nextInt();
 		
+		checkAge(age);
+		
+		
+	}
+
+	private static void checkAge(int age) {
+		
 		if (age >= 18) {
 			System.out.println("You can vote!");
 		}
 		else {
 			System.out.println("You cannot vote");
 		}
+		
+		
 	}
 
 }
