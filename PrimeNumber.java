@@ -1,15 +1,12 @@
-package loops;
-
 import java.util.Scanner;
 
 public class PrimeNumber {
 
 	public static void main(String[] args) {
 
-		Scanner sc = new Scanner(System.in);
-		
+		Scanner sc = new Scanner(System.in);	
+		System.out.print("Enter Number here: ");
 		int n = sc.nextInt();
-		
 		boolean isPrime = true;
 		
 		if(n<2) { isPrime = false;}
@@ -22,13 +19,6 @@ public class PrimeNumber {
 				System.out.println("Number is Prime");
 				break;
 			}
-			
 		}
-		
-	
-		
-		
-
 	}
-
 }
