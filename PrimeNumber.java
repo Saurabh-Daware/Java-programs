@@ -7,8 +7,11 @@ public class PrimeNumber {
 		Scanner sc = new Scanner(System.in);	
 		System.out.print("Enter Number here: ");
 		int n = sc.nextInt();
+		CheckPrimeNumber(n);
+	}
+
+	public static void CheckPrimeNumber(int n) {
 		boolean isPrime = true;
-		
 		if(n<2) { isPrime = false;}
 		for(int i = 2; i < n; i++) {
 			if(n % i ==0) {
