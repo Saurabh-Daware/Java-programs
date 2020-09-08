@@ -36,7 +36,7 @@ public class PhoneBook {
 			}
 			
 			if(n == 3) {break;}
-			
 		}
+		sc.close();
 	}
 }
