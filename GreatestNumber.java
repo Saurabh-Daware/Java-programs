@@ -14,16 +14,11 @@ public class GreatestNumber {
 		System.out.println("Enter third number");
 		c = sc.nextInt();
 		
-		Comparison(a,b,c);
+		System.out.println("Greatest number is " + Comparison(a,b,c));
 	}
 
-	private static void Comparison(int a, int b, int c) {
-		 int result;
-		
-		result = b > a ? b > c ? b : c : a > c ? a : c;
-		
-		System.out.println("Greatest Number is "+result);
-		
+	private static int Comparison(int a, int b, int c) {
+		return b > a ? b > c ? b : c : a > c ? a : c;	
 	}
 
 }
