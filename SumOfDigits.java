@@ -8,19 +8,15 @@ public class SumOfDigits {
 		Scanner sc = new Scanner(System.in);
 		int n = sc.nextInt();
 		
-		int temp = n;
-		int sum = 0;
+		int temp = n, sum = 0;
 		
 		while(temp > 0) {
-			
 			int lastDigit = temp % 10;
 			temp /= 10;
-			
 			sum += lastDigit;
 		}
 		
-		System.out.println("The sum of digits of "+ n+ " is " + sum);
-	
+		System.out.println("The sum of digits of "+ n + " is " + sum);
 	}
 
 }
