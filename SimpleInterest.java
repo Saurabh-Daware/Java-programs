@@ -10,7 +10,7 @@ public class SimpleInterest {
 		
 		double principle, rate, time, interest;
 		
-		System.out.println("Enter Principle amount :");
+		System.out.println("Enter the Principle amount :");
 		principle = sc.nextDouble();
 		
 		System.out.println("Enter Rate: ");
