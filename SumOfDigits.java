@@ -16,7 +16,7 @@ public class SumOfDigits {
 			sum += lastDigit;
 		}
 		
-		System.out.println("The sum of digits of "+ n + " is " + sum);
+		System.out.println("The sum of the digits of "+ n + " is " + sum);
 	}
 
 }
