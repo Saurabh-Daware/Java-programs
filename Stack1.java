@@ -19,7 +19,6 @@ public class Stack1 {
 	public static void main(String[] args) throws NumberFormatException, IOException {
 		
 		int option;
-		String choice;
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		
 		Stack1 s = new Stack1();
