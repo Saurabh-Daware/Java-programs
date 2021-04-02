@@ -1,5 +1,3 @@
-package practice;
-
 import java.io.*;
 
 public class Stack1 {
@@ -17,29 +15,35 @@ public class Stack1 {
 	}
 
 	public static void main(String[] args) throws NumberFormatException, IOException {
-		
+
 		int option;
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		
+
 		Stack1 s = new Stack1();
-		
-		do {		
-			System.out.println("Menu:\n"+"	1. Push\n"+"	2. Pop\n"+"	3. Peek\n"+"	4. Display\n"+"	5. Exit\n");
-			
+
+		do {
+			System.out.println(
+					"Menu:\n" + "	1. Push\n" + "	2. Pop\n" + "	3. Peek\n" + "	4. Display\n" + "	5. Exit\n");
+
 			option = Integer.parseInt(br.readLine());
-			switch(option) {
-			case 1: s.push();
-				break;
-			case 2: s.pop();
-				break;
-			case 3: s.peek();
-				break;
-			case 4: s.display();
-				break;
-			case 5: System.out.println("Thank you for using this program!");
-				return;
+			switch (option) {
+				case 1:
+					s.push();
+					break;
+				case 2:
+					s.pop();
+					break;
+				case 3:
+					s.peek();
+					break;
+				case 4:
+					s.display();
+					break;
+				case 5:
+					System.out.println("Thank you for using this program!");
+					return;
 			}
-		}while(true);
+		} while (true);
 	}
 
 	void push() throws IOException {
@@ -60,7 +64,7 @@ public class Stack1 {
 		if (top == -1) {
 			System.out.println("Stack underflow");
 		} else {
-			System.out.println("Value popped = " + a[top]+"\n");
+			System.out.println("Value popped = " + a[top] + "\n");
 			--top;
 		}
 	}
@@ -69,12 +73,11 @@ public class Stack1 {
 		if (top == -1) {
 			System.out.println("Stack empty");
 		} else {
-			System.out.println("Top value = " + a[top]+"\n");
+			System.out.println("Top value = " + a[top] + "\n");
 		}
 	}
 
 	void display() {
-		int i;
 		if (top == -1) {
 			System.out.println("Stack empty");
 		} else {

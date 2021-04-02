@@ -1,5 +1,3 @@
-package whileLoops;
-
 import java.util.Scanner;
 
 public class PalindromeNumber {
@@ -10,21 +8,19 @@ public class PalindromeNumber {
 		int n = sc.nextInt();
 		int temp = n;
 		int reversedNumber = 0;
-		
-		while(temp >0){
-			
+		sc.close();
+		while (temp > 0) {
+
 			int lastDigit = temp % 10;
-			
+
 			reversedNumber = reversedNumber * 10 + lastDigit;
 			temp /= 10;
 		}
-		
-		if(reversedNumber == n) {
+
+		if (reversedNumber == n) {
 			System.out.println(n + " is a palindrome");
 		} else {
 			System.out.println(n + " is not a palindrome");
 		}
-
 	}
-
 }

@@ -1,4 +1,3 @@
-package conditionalStatement;
 import java.util.Scanner;
 
 public class GreatestNumber1 {
@@ -6,26 +5,26 @@ public class GreatestNumber1 {
 	public static void main(String[] args) {
 
 		Scanner sc = new Scanner(System.in);
-		int a,b,c;
+		int a, b, c;
 		System.out.println("Enter numbers");
-		 a = sc.nextInt();
-		 b = sc.nextInt();
-		 c = sc.nextInt();
+		a = sc.nextInt();
+		b = sc.nextInt();
+		c = sc.nextInt();
 		int result = 0;
-		
-		if (a>b) {
-			if (a>c) {
+		sc.close();
+
+		if (a > b) {
+			if (a > c) {
 				result = a;
 			}
-			if (b>c) {
+			if (b > c) {
 				result = b;
-			}
-			else {
+			} else {
 				result = c;
 			}
-		
 
-		}System.out.println("Greatest number is " + result);
+		}
+		System.out.println("Greatest number is " + result);
 
 	}
 }
